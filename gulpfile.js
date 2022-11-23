@@ -17,7 +17,7 @@ gulp.task('server', function () {
 });
 
 gulp.task('styles', function () {
-    return gulp.src("src/*.+(scss|sass)")
+    return gulp.src("src/**/*.+(scss|sass)")
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer())
@@ -27,7 +27,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch("src/*.+(scss|sass)", gulp.parallel('styles'));
+    gulp.watch("src/**/*.+(scss|sass)", gulp.parallel('styles'));
 })
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles'));

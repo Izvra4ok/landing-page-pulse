@@ -1,0 +1,53 @@
+header {
+
+}
+
+.header {
+  background-image: url("../../assets/image/bg.png");
+  height: 650px;
+  padding-top: 21px;
+
+  &-content {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__item p:nth-child(1) {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 7px;
+  }
+
+  &__item p:nth-child(2) {
+    font-size: 18px;
+  }
+  &__phone{
+
+    margin-bottom: 124px;
+  }
+  &__phone a{
+    width: 191px;
+    color:white;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: right;
+    font-weight: 700;
+  }
+  &__button{
+    width: 153px;
+    height: 32px;
+    background-color: #C70101;
+    border-radius: 5px;
+    color:white;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: center;
+    border:none;
+  }
+
+}
