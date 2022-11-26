@@ -1,0 +1,52 @@
+@import "variables";
+@import "src/scss/mixins";
+
+.benefits {
+  margin-top: 70px;
+  margin-bottom: 65px;
+  min-height: 473px;
+}
+
+.benefits-info {
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
+.benefits-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &_img {
+    max-width: 70px;
+    max-height: 70px;
+    width: 100%;
+  }
+
+  &_title {
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+
+  &_text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+    width: 270px;
+    & a,a:hover{
+      color:red;
+    }
+  }
+}

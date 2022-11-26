@@ -6,78 +6,184 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pulse</title>
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/scss/style.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
 </head>
 <body>
-
 <div class="wrapper">
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
+    <div class="first_bg">
+        <header class="header">
+            <div class="container container_">
+                <div class="header-content">
 
-                <div class="header__item">
-                    <img src="assets/icons/running-man-2-64.png" alt="running man">
+                    <div class="header__item">
+                        <a class="header_logo" href="#">
+                            <img class="header_image" src="assets/icons/running-man-2-64.png" alt="running man">
+                        </a>
+                    </div>
+
+                    <div class="header__item">
+                        <p>Официальный представитель</p>
+                        <p>Garmin, Polar, Suunto</p>
+                    </div>
+
+                    <div class="header__item">
+                        <p class="header__phone">
+                            <a href="tel:+74999228974" class="header-link-phone">+7 (499) 922-89-74</a>
+                        </p>
+                        <button class="header__button">Заказать звонок</button>
+                    </div>
+
                 </div>
-
-                <div class="header__item">
-                    <p>Официальный представитель</p>
-                    <p>Garmin, Polar, Suunto</p>
-                </div>
-
-                <div class="header__item">
-                   <p class="header__phone">
-                       <a href="tel:+74999228974" class="header-link-phone">+7 (499) 922-89-74</a>
-                   </p>
-                <button class="header__button">Заказать звонок</button>
-                </div>
-
             </div>
-        </div>
-    </header>
-
-    <main class="main">
+        </header>
 
         <section class="selection">
-            <div class="container">
-                подбор
+            <div class="container container_">
+                <div class="selection-info">
+
+                    <div class="selection-title">
+                        <h1 class="selection-title__main-title">ПОДБРОР ПУЛЬСОМЕТРА</h1>
+                        <p class="selection-title__title_info">С УЧЕТОМ ВАШЕГО УРОВНЯ ПОДГОТОВКИ</p>
+                    </div>
+
+                    <div class="selection-items">
+
+                        <div class="selection-items__item">
+                            <img class="selection-items_img" src="assets/icons/019_timer_time_stopwatch_2-64%20(4).png"
+                                 alt="timer">
+                            <p class="selection-items_text">Время подброра:</br> 10 минут</p>
+                        </div>
+
+                        <div class="selection-items__item">
+                            <img class="selection-items_img" src="./assets/icons/app%2008%20hand%20cart%2064.png"
+                                 alt="send">
+                            <p class="selection-items_text">Бесплатная </br> доставка</p>
+                        </div>
+
+                        <div class="selection-items__item">
+                            <img class="selection-items_img" src="./assets/icons/messages-64.png" alt="messages">
+                            <p class="selection-items_text">Ответим </br> на все вопросы</p>
+                        </div>
+                    </div>
+
+                    <div class="selection-help">
+                        <button class="selection-help__btn">Заказать консультацию</button>
+                        <p class="selection-help__text">или <a href="#" class="selection-help_link">ПЕРЕЙТИ В
+                            КАТАЛОГ</a></p>
+                    </div>
+
+                </div>
             </div>
         </section>
+    </div>
 
+    <main class="main">
         <section class="benefits">
-            <div class="container">
-                benefits
+            <div class="container container_">
+
+                <div class="benefits-info">
+                    <h2 class="benefits-info__title title">Наши преимущества</h2>
+                    <div class="benefits-items">
+
+                        <div class="benefits-items__item">
+                            <img class="benefits-items_img" src="./assets/icons/cup.png" alt="cup">
+                            <h3 class="benefits-items_title">Делимся опытом</h3>
+                            <p class="benefits-items_text">Наши сотрудники всегда готовы поделиться своим опытом, так
+                                как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по
+                                триатлону!</p>
+                        </div>
+
+                        <div class="benefits-items__item">
+                            <img class="benefits-items_img" src="./assets/icons/heart.png" alt="hear">
+                            <h3 class="benefits-items_title">Заботимся о здоровье</h3>
+                            <p class="benefits-items_text">Мы работаем для того, чтобы Ваши занятия спортом шли на
+                                пользу Вашему здоровью и были в радость Вам и Вашим близким!</p>
+                        </div>
+
+                        <div class="benefits-items__item">
+                            <img class="benefits-items_img" src="./assets/icons/shoe.png" alt="shoe">
+                            <h3 class="benefits-items_title">Учим бегать</h3>
+                            <p class="benefits-items_text">Помогаем с обучение правильной технике бега! Дружим с
+                                крупнейшей школой бега в России - <a href="#">I LOVE RUNNING.</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </section>
 
         <section class="consultation">
-            <div class="container">
-                consultation
+            <div class="consultation_bg">
+                <div class="container container_">
+
+                    <div class="consultation-info">
+
+                        <h2 class="consultation-info__title title">Получите бесплатную консультацию</br>по подбору
+                            пульсометра</h2>
+                        <p class="consultation-info__text">Просто заполните форму заявки</br> и мы перезвоним вам в
+                            течении
+                            10 минут</p>
+
+                        <form class="form" action="#">
+                            <label for="name"></label>
+                            <input name="name" required id="name" class="form_input" type="text" placeholder="Ваше имя">
+
+                            <label for="phone"></label>
+                            <input name="phone" required id="phone" class="form_input" type="number"
+                                   placeholder="Ваш телефон">
+
+                            <label for="email"></label>
+                            <input name="email" required id="email" class="form_input" type="email"
+                                   placeholder="Ваш E-mail">
+
+                            <button class="form_btn">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="carousel">
+            <div class="container container_">
+                <div class="carousel__inner">
+                    <div><img src="./assets/image/carousel/slide1.png" alt="slide1"></div>
+                    <div><img src="./assets/image/carousel/slide2.png" alt="slide2"></div>
+                    <div><img src="./assets/image/carousel/slide3.png" alt="slide3"></div>
+                </div>
             </div>
         </section>
 
         <section class="pulsar">
-            <div class="container">
+            <div class="container container_">
                 pulsar
             </div>
         </section>
 
         <section class="comments">
-            <div class="container">
+            <div class="container container_">
                 comments
             </div>
         </section>
 
         <footer class="map">
-            <div class="container">
-                map
-            </div>
+
+            map
+
         </footer>
     </main>
 </div>
-
-
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
