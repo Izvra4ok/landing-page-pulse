@@ -1,10 +1,8 @@
 $(document).ready(function () {
     $('.carousel__inner').slick({
         dots: true,
-        // prevArrow: "<button type=\"button\" class=\"slick-prev\"><img src='../assets/image/carousel/left.jpg' alt='left'></button>",
-        // nextArrow: "<button type=\"button\" class=\"slick-next\"><img src='../assets/image/carousel/chevron-right-solid.jpg' alt='right'></button>",
         prevArrow: "<button type=\"button\" class=\"slick-prev\"><img src='../src/assets/image/carousel/left.jpg' alt='left'></button>",
-        nextArrow: "<button type=\"button\" class=\"slick-next\"><img src='.../src/assets/image/carousel/chevron-right-solid.jpg' alt='right'></button>",
+        nextArrow: "<button type=\"button\" class=\"slick-next\"><img src='../src/assets/image/carousel/chevron-right-solid.jpg' alt='right'></button>",
         infinite: true,
         speed: 500,
         autoplay: true,

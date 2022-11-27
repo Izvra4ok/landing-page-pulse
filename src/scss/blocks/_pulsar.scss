@@ -6,7 +6,7 @@
     font-size: 30px;
     line-height: 45px;
     text-align: center;
-    color:black;
+    color: black;
     margin-bottom: 45px;
   }
 }
@@ -23,17 +23,101 @@
     @include btn_main
   }
 }
-.pulsar-choice{
+
+.pulsar-choice {
+  margin-top: 57px;
+
+  .pulsar-order {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    &__items {
+      display: grid;
+      margin: 0 auto;
+      max-width: 303px;
+      width: 100%;
+      max-height: 442px;
+      height: 100%;
+      border: 1px solid grey;
+    }
+
+    &_list {
+      margin:16px 6px 0 auto;
+      list-style: square;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
 
 
-  &__items{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    max-width: 303px;
-    width: 100%;
-    max-height: 442px;
-    height: 100%;
+      li {
+        color:#214133;
+        list-style-type: none;
+        margin-bottom: 3px;
+      }
+      li::before{
+        content: "❤";
+        margin-right: 9px;
+        color:red;
+      }
+    }
+
+    &_img {
+      margin: 20px auto 15px auto;
+      width: 140px;
+      height: 200px;
+    }
+
+    &_title {
+      margin-bottom: 15px;
+      color: #0D0D0D;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 25px;
+      text-align: center;
+    }
+
+    &_text {
+      margin-bottom: 10px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 22px;
+      color: #0D0D0D;
+      text-align: center;
+    }
+
+    &_link {
+      text-align: center;
+      margin-bottom: 38px;
+      color: red;
+    }
+
+    &_price {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      margin-bottom: 20px;
+
+      &-old {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 14px;
+        color: #555555;
+        text-decoration-line: line-through;
+      }
+
+      &-new {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        color: #050505;
+      }
+
+      &-btn {
+        width: 135px;
+        height: 44px;
+        @include btn_main;
+      }
+    }
   }
 }
