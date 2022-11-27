@@ -1,13 +1,15 @@
 //block scss//
 @import "src/scss/variables";
 @import "src/scss/mixins";
-@import "src/scss/header";
-@import "src/scss/selection";
-@import "src/scss/benefits";
-@import "src/scss/consultation";
-@import "src/scss/forms";
-@import "carousel";
+@import "blocks/header";
+@import "blocks/selection";
+@import "blocks/benefits";
+@import "blocks/consultation";
+@import "blocks/forms";
+@import "blocks/carousel";
+@import "blocks/pulsar";
 @import "src/scss/media";
+
 
 /*Обнуление*/
 
@@ -83,7 +85,8 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 
 body {
-  max-width: 1920px;
+  max-width: 2960px;
+  margin:0 auto;
 }
 
 .wrapper {

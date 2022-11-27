@@ -28,4 +28,23 @@
     left: auto;
   }
 
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    margin: 0 5px 0 0;
+    justify-content: center;
+    font-size: 12px;
+
+    & button {
+      margin: 0 5px 0 0;
+    }
+  }
+
+  .slick-active {
+    font-size: 12px;
+    & button{
+      font-weight: 900;
+    }
+
+  }
 }

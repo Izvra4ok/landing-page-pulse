@@ -1,5 +1,5 @@
-@import "variables";
-@import "src/scss/mixins";
+@import "src/scss/variables";
+@import "../mixins";
 
 .first_bg {
   background: url("../../assets/image/bg.png") center (center/cover) no-repeat;
