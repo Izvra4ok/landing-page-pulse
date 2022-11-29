@@ -8,6 +8,7 @@
 @import "blocks/forms";
 @import "blocks/carousel";
 @import "blocks/pulsar";
+@import "blocks/comments";
 @import "src/scss/media";
 
 
@@ -96,6 +97,7 @@ body {
 
 .container.container_ {
   margin: 0 auto;
+  position: relative;
   max-width: 950px;
 }
 

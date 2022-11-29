@@ -1,6 +1,12 @@
 .carousel {
   padding: 81px 0 81px 0;
 
+  .carousel_img {
+    width: 100%;
+    max-width: 749px;
+    margin: 0 auto;
+  }
+
   &__inner {
     position: relative;
     background-color: white;
@@ -36,14 +42,28 @@
     font-size: 12px;
 
     & button {
-      margin: 0 5px 0 0;
+      font-size: 0;
+      margin: 0 20px 0 0;
+    }
+
+    & button::before {
+      font-size: 20px;
+      content: "❤";
     }
   }
 
   .slick-active {
     font-size: 12px;
-    & button{
-      font-weight: 900;
+
+    & button {
+
+      font-size: 0;
+    }
+
+    & button::before {
+      font-size: 20px;
+      content: "❤";
+      color: red;
     }
 
   }

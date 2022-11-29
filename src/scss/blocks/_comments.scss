@@ -1,0 +1,56 @@
+@import "src/scss/variables";
+@import "../mixins";
+
+.comments-info {
+  margin-top: 60px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+}
+
+.comments-items{
+  margin-top: 60px;
+  &_name{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color:black;
+    p{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      color:#646464;
+    }
+  }
+  &_text{
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    p{
+      margin:10px 0;
+    }
+  }
+
+  &__item{
+    display: flex;
+    margin-bottom: 60px;
+  }
+  &__img{
+    margin-right: 61px;
+    img {
+      width: 169px;
+      height: 169px;
+    }
+
+  }
+  &__about{
+    display: flex;
+    flex-direction: column;
+  }
+}
