@@ -9,11 +9,11 @@ $(document).ready(function () {
         autoplaySpeed: 2000,
         fade: true,
         cssEase: "linear",
-        responsive:[
+        responsive: [
             {
                 breakpoint: 768,
                 settings: {
-                    arrows:false,
+                    arrows: false,
                     dots: true
                 }
             },
@@ -23,3 +23,12 @@ $(document).ready(function () {
     });
 });
 
+
+document.querySelectorAll('.pulsar-mode__btn').forEach(function (el) {
+    el.onclick = function (e) {
+        document.querySelectorAll('.pulsar-mode__btn').forEach(function (el) {
+            el.classList.remove("active");
+        });
+        this.classList.add("active");
+    }
+})

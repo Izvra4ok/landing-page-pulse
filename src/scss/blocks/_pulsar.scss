@@ -22,7 +22,25 @@
     height: 52px;
     font-size: 18px;
     text-align: center;
-    @include btn_main
+    @include btn_main;
+    background-color: white;
+    color: #6B6B6B;
+    border: 1px solid #6B6B6B;
+    font-style: normal;
+    transform: skewX(-15deg);
+    transition: 0.5s all;
+
+    &:hover {
+      border: none;
+      box-shadow: 2px 2px 2px black;
+      background-color: rgba(245, 2, 2, 0.44);
+    }
+  }
+
+  &__btn.active {
+    background-color: $btn-bg;
+    color: white;
+    border: none;
   }
 }
 
@@ -35,6 +53,7 @@
     grid-template-columns: 1fr 1fr 1fr;
 
     &__items {
+      position: relative;
       display: grid;
       margin: 0 auto;
       max-width: 303px;
@@ -44,6 +63,7 @@
     }
 
     &_list {
+
       margin: 16px 6px 0 auto;
       list-style: square;
       font-weight: 300;
@@ -88,13 +108,23 @@
     }
 
     &_link {
+
       text-align: center;
       margin-bottom: 38px;
       color: red;
     }
 
     &_link.back {
-
+      position: absolute;
+      bottom: 14%;
+      left: 50%;
+      transform: translateX(calc(-40% - 19px));
+      display: block;
+      color: red;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+      
     }
 
     &_price {
