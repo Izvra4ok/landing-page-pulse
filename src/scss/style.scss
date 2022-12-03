@@ -10,6 +10,7 @@
 @import "blocks/pulsar";
 @import "blocks/comments";
 @import "blocks/footer";
+@import "blocks/modal";
 @import "src/scss/media";
 
 
@@ -88,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   max-width: 2960px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .wrapper {

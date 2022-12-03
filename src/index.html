@@ -39,7 +39,7 @@
                         <p class="header__phone">
                             <a href="tel:+74999228974" class="header-link-phone phone">+7 (499) 922-89-74</a>
                         </p>
-                        <button class="header__button">Заказать звонок</button>
+                        <button data-modal="consultation" class="header__button consultation">Заказать звонок</button>
                     </div>
 
                 </div>
@@ -76,7 +76,7 @@
                     </div>
 
                     <div class="selection-help">
-                        <button class="selection-help__btn">Заказать консультацию</button>
+                        <button  data-modal="consultation" class="selection-help__btn consultation">Заказать консультацию</button>
                         <p class="selection-help__text">или <a href="#aa" class="selection-help_link">ПЕРЕЙТИ В
                             КАТАЛОГ</a></p>
                     </div>
@@ -145,7 +145,7 @@
                             <input name="email" required id="email" class="form_input" type="email"
                                    placeholder="Ваш E-mail">
 
-                            <button class="form_btn">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
+                            <button data-modal="thanks" class="form_btn">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
                         </form>
                     </div>
                 </div>
@@ -187,7 +187,7 @@
                                         <div class="pulsar-order_price-old">4 750 руб.</div>
                                         <div class="pulsar-order_price-new">4 500 руб.</div>
                                     </div>
-                                    <button class="pulsar-order_price-btn">КУПИТЬ</button>
+                                    <button data-modal="order" class="pulsar-order_price-btn">КУПИТЬ</button>
                                 </div>
                             </div>
 
@@ -202,7 +202,7 @@
                                         <div class="pulsar-order_price-old">6 690 руб.</div>
                                         <div class="pulsar-order_price-new">6 641 руб.</div>
                                     </div>
-                                    <button class="pulsar-order_price-btn">КУПИТЬ</button>
+                                    <button data-modal="order" class="pulsar-order_price-btn">КУПИТЬ</button>
                                 </div>
                             </div>
 
@@ -222,7 +222,7 @@
                                         <div class="pulsar-order_price-old">7 390 руб.</div>
                                         <div class="pulsar-order_price-new">7 021 руб.</div>
                                     </div>
-                                    <button class="pulsar-order_price-btn">КУПИТЬ</button>
+                                    <button data-modal="consultation" class="pulsar-order_price-btn">КУПИТЬ</button>
                                 </div>
                             </div>
 
@@ -237,7 +237,7 @@
                                         <div class="pulsar-order_price-old">4 750 руб.</div>
                                         <div class="pulsar-order_price-new">4 500 руб.</div>
                                     </div>
-                                    <button class="pulsar-order_price-btn">КУПИТЬ</button>
+                                    <button data-modal="order" class="pulsar-order_price-btn">КУПИТЬ</button>
                                 </div>
                             </div>
 
@@ -253,7 +253,7 @@
                                         <div class="pulsar-order_price-old">6 690 руб.</div>
                                         <div class="pulsar-order_price-new">6 641 руб.</div>
                                     </div>
-                                    <button class="pulsar-order_price-btn">КУПИТЬ</button>
+                                    <button data-modal="order" class="pulsar-order_price-btn">КУПИТЬ</button>
                                 </div>
                             </div>
 
@@ -269,7 +269,7 @@
                                         <div class="pulsar-order_price-old">6 690 руб.</div>
                                         <div class="pulsar-order_price-new">6 641 руб.</div>
                                     </div>
-                                    <button class="pulsar-order_price-btn">КУПИТЬ</button>
+                                    <button data-modal="order" class="pulsar-order_price-btn">КУПИТЬ</button>
                                 </div>
                             </div>
 
@@ -380,33 +380,63 @@
             </div>
         </footer>
 
-        <div class="overlay">
-            <div class="modal">
-                <div class="modal__close">$times;</div>
-                <div class="modal__subtitle"></div>
-                <div class="modal_description"></div>
-                <form class="form" action="#ss">
-                    <label for="name"></label>
-                    <input name="name" required id="nameModal" class="form_input" type="text" placeholder="Ваше имя">
+    </main>
 
-                    <label for="phone"></label>
-                    <input name="phone" required id="phoneModal" class="form_input" type="number"
-                           placeholder="Ваш телефон">
+    <!--Modals-->
+    <div class="overlay" id="overlay">
+        <div class="modals" id="consultation">
+            <div class="modals__close">&#10006;</div>
+            <div class="modals__subtitle">Просто заполните форму заявки</div>
+            <div class="modals__description">и мы перезвоним вам в течении 10 минут</div>
+            <form class="form" action="#ss">
+                <label for="name"></label>
+                <input name="name" required id="nameConsult" class="form_input" type="text" placeholder="Ваше имя">
 
-                    <label for="email"></label>
-                    <input name="email" required id="emailModal" class="form_input" type="email"
-                           placeholder="Ваш E-mail">
+                <label for="phone"></label>
+                <input name="phone" required id="phoneConsult" class="form_input" type="number"
+                       placeholder="Ваш телефон">
 
-                    <button class="form_btn">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
-                </form>
-            </div>
+                <label for="email"></label>
+                <input name="email" required id="emailConsult" class="form_input" type="email"
+                       placeholder="Ваш E-mail">
+
+                <button data-modal="thanks" class="form_btn">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
+            </form>
         </div>
 
-    </main>
+        <div class="modals" id="order">
+            <div class="modals__close">&#10006;</div>
+            <div class="modals__subtitle">Ваш заказ:</div>
+            <div class="modals__description">Пульсометр Polar FT1</div>
+            <form class="form" action="#ss">
+                <label for="name"></label>
+                <input name="name" required id="nameOrder" class="form_input" type="text" placeholder="Ваше имя">
+
+                <label for="phone"></label>
+                <input name="phone" required id="phoneOrder" class="form_input" type="number"
+                       placeholder="Ваш телефон">
+
+                <label for="email"></label>
+                <input name="email" required id="emailOrder" class="form_input" type="email"
+                       placeholder="Ваш E-mail">
+
+                <button  data-modal="thanks" class="form_btn">КУПИТЬ</button>
+            </form>
+        </div>
+
+        <div class="modals modals_small" id="thanks">
+            <div class="modals__close">&#10006;</div>
+            <div class="modals__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modals__description">Наш менеджер свяжется с вами в ближайшее время!</div>
+        </div>
+    </div>
+    <!--Modals-->
+
 </div>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/modal.js"></script>
 </body>
 </html>
