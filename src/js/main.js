@@ -1,28 +1,71 @@
-$(document).ready(function () {
-    $('.carousel__inner').slick({
-        dots: true,
-        prevArrow: "<button type=\"button\" class=\"slick-prev\"><img src='../src/assets/image/carousel/left.jpg' alt='left'></button>",
-        nextArrow: "<button type=\"button\" class=\"slick-next\"><img src='../src/assets/image/carousel/chevron-right-solid.jpg' alt='right'></button>",
-        infinite: true,
-        speed: 500,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        fade: true,
-        cssEase: "linear",
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    dots: true
-                }
-            },
-        ]
+//+ class active//
+
+document.querySelectorAll('.pulsar-mode__btn').forEach(function (el) {
+    el.onclick = function (e) {
+        document.querySelectorAll('.pulsar-mode__btn').forEach(function (el) {
+            el.classList.remove("active");
+        });
+        this.classList.add("active");
+    }
+})
 
 
-    });
+// Modals //
+$('[data-modal=consultation]').on('click', function () {
+    $('.overlay, #consultation').fadeIn('fast');
 });
 
 
+$('[data-modal=order]').each(function (i) {
+    $(this).on("click", function () {
+        $("#order .modals__description").text($(".pulsar-order_title").eq(i).text())
+        $('.overlay, #order').fadeIn('fast');
+    })
+})
 
 
+$('[data-modal=thanks]').on('click', function () {
+    $('.overlay, #thanks').fadeIn('fast');
+});
+
+
+$('.modals__close').on('click', function () {
+    $('.overlay, #consultation, #thanks, #order').fadeOut('fast');
+});
+
+//validate forms//
+
+
+const validateForms = function (form) {
+    $(form).validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 3,
+                maxlength: 20,
+            },
+            phone: {
+                required: true,
+                minlength: 3,
+                maxlength: 20,
+            },
+            email: {
+                required: true,
+                email: true,
+                minlength: 3,
+                maxlength: 30,
+            }
+        }
+    });
+    // $("button").on("click", function () {
+    //     alert("Hello")
+    // })
+    $("button").on("click", function () {
+        // console.log( "Valid: " + $(form).valid() + form );
+    });
+}
+validateForms("#consultant form")
+validateForms("#consultation form")
+validateForms("#order form")
+
+$("input[name=phone]").mask("+999-99-99-999-99");

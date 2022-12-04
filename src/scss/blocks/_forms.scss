@@ -5,6 +5,19 @@
   display: flex;
   flex-direction: column;
 
+  .error {
+    color: red;
+    border: 1px solid red;
+  }
+
+  label.error {
+    border: none;
+  }
+
+  input.error {
+    color: black
+  }
+
   &_input {
     width: 303px;
     height: 58px;
@@ -14,6 +27,7 @@
     padding: 0 0 0 20px;
     font-weight: 300;
     line-height: 66px;
+    color: black;
   }
 
   &_btn {
@@ -27,4 +41,5 @@
     text-align: center;
     font-weight: 500;
   }
+
 }

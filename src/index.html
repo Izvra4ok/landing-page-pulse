@@ -76,7 +76,9 @@
                     </div>
 
                     <div class="selection-help">
-                        <button  data-modal="consultation" class="selection-help__btn consultation">Заказать консультацию</button>
+                        <button data-modal="consultation" class="selection-help__btn consultation">Заказать
+                            консультацию
+                        </button>
                         <p class="selection-help__text">или <a href="#aa" class="selection-help_link">ПЕРЕЙТИ В
                             КАТАЛОГ</a></p>
                     </div>
@@ -121,7 +123,7 @@
 
         </section>
 
-        <section class="consultation">
+        <section class="consultation" id="consultant">
             <div class="consultation_bg">
                 <div class="container container_">
 
@@ -135,17 +137,19 @@
 
                         <form class="form" action="#ss">
                             <label for="name"></label>
-                            <input name="name" required id="name" class="form_input" type="text" placeholder="Ваше имя">
+                            <input name="name" id="name" class="form_input"
+                                   type="text" placeholder="Ваше имя">
 
                             <label for="phone"></label>
-                            <input name="phone" required id="phone" class="form_input" type="number"
-                                   placeholder="Ваш телефон">
+                            <input name="phone" maxlength="20" id="phone" class="form_input"
+                                   placeholder="Ваш телефон" type="tel">
 
                             <label for="email"></label>
-                            <input name="email" required id="email" class="form_input" type="email"
+                            <input name="email" maxlength="30" id="email" class="form_input"
+                                   type="email"
                                    placeholder="Ваш E-mail">
 
-                            <button data-modal="thanks" class="form_btn">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
+                            <button class="form_btn">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
                         </form>
                     </div>
                 </div>
@@ -176,12 +180,13 @@
                     <div class="pulsar-choice">
                         <div class="pulsar-order">
 
-                            <div class="pulsar-order__items">
+                            <div class="pulsar-order__items pulsar-order__items_active">
                                 <img class="pulsar-order_img" src="./assets/image/pulsar.png" alt="pulsar">
                                 <h3 class="pulsar-order_title">Пульсометр Polar FT1</h3>
                                 <p class="pulsar-order_text">Для первых шагов в тренировках, основанных на сердечном
                                     ритме</p>
                                 <a class="pulsar-order_link" href="#ss">ПОДРОБНЕЕ</a>
+
                                 <div class="pulsar-order_price">
                                     <div>
                                         <div class="pulsar-order_price-old">4 750 руб.</div>
@@ -191,7 +196,7 @@
                                 </div>
                             </div>
 
-                            <div class="pulsar-order__items">
+                            <div class="pulsar-order__items pulsar-order__items_active">
                                 <img class="pulsar-order_img" src="./assets/image/pulsar.png" alt="pulsar">
                                 <h3 class="pulsar-order_title">Пульсометр Polar FT1</h3>
                                 <p class="pulsar-order_text">Для первых шагов в тренировках, основанных на сердечном
@@ -206,7 +211,7 @@
                                 </div>
                             </div>
 
-                            <div class="pulsar-order__items">
+                            <div class="pulsar-order__items pulsar-order__items_active">
                                 <ul class="pulsar-order_list">
                                     <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
                                     <li>Вы увидите информативный графический индикатор целевых тренировочных зон
@@ -217,7 +222,7 @@
                                 </ul>
                                 <a class="pulsar-order_link back" href="#ss">НАЗАД</a>
 
-                                <div class="pulsar-order_price">
+                                <div class="pulsar-order_price pulsar-order__items_active">
                                     <div>
                                         <div class="pulsar-order_price-old">7 390 руб.</div>
                                         <div class="pulsar-order_price-new">7 021 руб.</div>
@@ -226,7 +231,7 @@
                                 </div>
                             </div>
 
-                            <div class="pulsar-order__items">
+                            <div class="pulsar-order__items pulsar-order__items_active">
                                 <img class="pulsar-order_img" src="./assets/image/pulsar.png" alt="pulsar">
                                 <h3 class="pulsar-order_title">Пульсометр Polar FT1</h3>
                                 <p class="pulsar-order_text">Для первых шагов в тренировках, основанных на сердечном
@@ -242,7 +247,7 @@
                             </div>
 
 
-                            <div class="pulsar-order__items">
+                            <div class="pulsar-order__items pulsar-order__items_active">
                                 <img class="pulsar-order_img" src="./assets/image/pulsar.png" alt="pulsar">
                                 <h3 class="pulsar-order_title">Пульсометр Suunto M2</h3>
                                 <p class="pulsar-order_text">Для первых шагов в тренировках, основанных на сердечном
@@ -258,7 +263,7 @@
                             </div>
 
 
-                            <div class="pulsar-order__items">
+                            <div class="pulsar-order__items pulsar-order__items_active">
                                 <img class="pulsar-order_img" src="./assets/image/pulsar.png" alt="pulsar">
                                 <h3 class="pulsar-order_title">Пульсометр Polar FT4</h3>
                                 <p class="pulsar-order_text">Для первых шагов в тренировках, основанных на сердечном
@@ -390,17 +395,19 @@
             <div class="modals__description">и мы перезвоним вам в течении 10 минут</div>
             <form class="form" action="#ss">
                 <label for="name"></label>
-                <input name="name" required id="nameConsult" class="form_input" type="text" placeholder="Ваше имя">
+                <input name="name" required maxlength="20" id="nameConsult" class="form_input" type="text"
+                       placeholder="Ваше имя">
 
                 <label for="phone"></label>
-                <input name="phone" required id="phoneConsult" class="form_input" type="number"
+                <input name="phone" required maxlength="20" id="phoneConsult" class="form_input"
                        placeholder="Ваш телефон">
 
                 <label for="email"></label>
-                <input name="email" required id="emailConsult" class="form_input" type="email"
+                <input name="email" required maxlength="30" id="emailConsult" class="form_input"
+                       type="email"
                        placeholder="Ваш E-mail">
 
-                <button data-modal="thanks" class="form_btn">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
+                <button class="form_btn">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
 
@@ -410,17 +417,19 @@
             <div class="modals__description">Пульсометр Polar FT1</div>
             <form class="form" action="#ss">
                 <label for="name"></label>
-                <input name="name" required id="nameOrder" class="form_input" type="text" placeholder="Ваше имя">
+                <input name="name" required maxlength="20" id="nameOrder" class="form_input" type="text"
+                       placeholder="Ваше имя">
 
                 <label for="phone"></label>
-                <input name="phone" required id="phoneOrder" class="form_input" type="number"
+                <input name="phone" required maxlength="20" id="phoneOrder" class="form_input"
                        placeholder="Ваш телефон">
 
                 <label for="email"></label>
-                <input name="email" required id="emailOrder" class="form_input" type="email"
+                <input name="email" required maxlength="30" id="emailOrder" class="form_input"
+                       type="email"
                        placeholder="Ваш E-mail">
 
-                <button  data-modal="thanks" class="form_btn">КУПИТЬ</button>
+                <button class="form_btn">КУПИТЬ</button>
             </form>
         </div>
 
@@ -433,10 +442,12 @@
     <!--Modals-->
 
 </div>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/slick.js"></script>
 <script src="js/main.js"></script>
-<script src="js/modal.js"></script>
 </body>
 </html>
