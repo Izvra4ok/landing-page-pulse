@@ -1,0 +1,40 @@
+@keyframes heartBite {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+
+
+@keyframes cup {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+
+@keyframes snickers {
+  from {
+    transform: skew(0,0)
+  }
+  50% {
+    transform: skew(10deg,-20deg)
+  }
+  to {
+    transform: skew(0,0)
+  }
+}
+

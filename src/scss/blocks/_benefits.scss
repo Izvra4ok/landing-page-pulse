@@ -32,6 +32,22 @@
     max-width: 70px;
     max-height: 70px;
     width: 100%;
+    background-color: white;
+    &_heart {
+      animation: heartBite 0.3s linear infinite;
+      &:hover{
+        animation: heartBite 1s linear infinite;
+      }
+    }
+    &_cup{
+      animation: cup 1s linear infinite;
+    }
+    &_snickers{
+      animation: snickers 1s linear infinite;
+      &:hover{
+        animation: snickers 0.3s linear infinite;
+      }
+    }
   }
 
   &_title {

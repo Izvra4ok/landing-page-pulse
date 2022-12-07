@@ -57,15 +57,42 @@ const validateForms = function (form) {
             }
         }
     });
-    // $("button").on("click", function () {
-    //     alert("Hello")
-    // })
-    $("button").on("click", function () {
-        // console.log( "Valid: " + $(form).valid() + form );
-    });
 }
 validateForms("#consultant form")
 validateForms("#consultation form")
 validateForms("#order form")
 
+
 $("input[name=phone]").mask("+999-99-99-999-99");
+
+
+$('form').submit(function (e) {
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+    }).done(function () {
+        $(this).find("input").val("");
+        $('#consultation, #consultant, #order').fadeOut();
+        $('.overlay, #thanks').fadeIn('slow');
+
+        $('form').trigger('reset');
+    });
+    return false;
+});
+
+//Smooth scroll//
+$(window).scroll(function (){
+    if ($(this).scrollTop() > 1600) {
+        $(".pageUp").fadeIn();
+    } else {
+        $(".pageUp").fadeOut()
+    }
+})
+
+$("a[href^='#']").click(function (){
+    const _href = $(this).attr("href");
+    $("html,body").animate({scrollTop: $(_href).offset().top+"px"});
+    return false
+})

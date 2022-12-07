@@ -20,7 +20,7 @@
 <body>
 <div class="wrapper">
     <div class="first_bg">
-        <header class="header">
+        <header id="up" class="header">
             <div class="container container_">
                 <div class="header-content">
 
@@ -60,18 +60,18 @@
                         <div class="selection-items__item">
                             <img class="selection-items_img" src="assets/icons/019_timer_time_stopwatch_2-64%20(4).png"
                                  alt="timer">
-                            <p class="selection-items_text">Время подброра:</br> 10 минут</p>
+                            <p class="selection-items_text">Время подброра:<br> 10 минут</p>
                         </div>
 
                         <div class="selection-items__item">
                             <img class="selection-items_img" src="./assets/icons/app%2008%20hand%20cart%2064.png"
                                  alt="send">
-                            <p class="selection-items_text">Бесплатная </br> доставка</p>
+                            <p class="selection-items_text">Бесплатная <br> доставка</p>
                         </div>
 
                         <div class="selection-items__item">
                             <img class="selection-items_img" src="./assets/icons/messages-64.png" alt="messages">
-                            <p class="selection-items_text">Ответим </br> на все вопросы</p>
+                            <p class="selection-items_text">Ответим <br> на все вопросы</p>
                         </div>
                     </div>
 
@@ -97,7 +97,8 @@
                     <div class="benefits-items">
 
                         <div class="benefits-items__item">
-                            <img class="benefits-items_img" src="./assets/icons/cup.png" alt="cup">
+                            <img class="benefits-items_img benefits-items_img_cup" src="./assets/icons/cup.png"
+                                 alt="cup">
                             <h3 class="benefits-items_title">Делимся опытом</h3>
                             <p class="benefits-items_text">Наши сотрудники всегда готовы поделиться своим опытом, так
                                 как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по
@@ -105,14 +106,16 @@
                         </div>
 
                         <div class="benefits-items__item">
-                            <img class="benefits-items_img" src="./assets/icons/heart.png" alt="hear">
+                            <img class="benefits-items_img benefits-items_img_heart" src="./assets/icons/heart.png"
+                                 alt="hear">
                             <h3 class="benefits-items_title">Заботимся о здоровье</h3>
                             <p class="benefits-items_text">Мы работаем для того, чтобы Ваши занятия спортом шли на
                                 пользу Вашему здоровью и были в радость Вам и Вашим близким!</p>
                         </div>
 
                         <div class="benefits-items__item">
-                            <img class="benefits-items_img" src="./assets/icons/shoe.png" alt="shoe">
+                            <img class="benefits-items_img benefits-items_img_snickers" src="./assets/icons/shoe.png"
+                                 alt="shoe">
                             <h3 class="benefits-items_title">Учим бегать</h3>
                             <p class="benefits-items_text">Помогаем с обучение правильной технике бега! Дружим с
                                 крупнейшей школой бега в России - <a href="#ss">I LOVE RUNNING.</a></p>
@@ -129,23 +132,23 @@
 
                     <div class="consultation-info">
 
-                        <h2 class="consultation-info__title title">Получите бесплатную консультацию</br>по подбору
+                        <h2 class="consultation-info__title title">Получите бесплатную консультацию<br>по подбору
                             пульсометра</h2>
-                        <p class="consultation-info__text">Просто заполните форму заявки</br> и мы перезвоним вам в
+                        <p class="consultation-info__text">Просто заполните форму заявки<br> и мы перезвоним вам в
                             течении
                             10 минут</p>
 
                         <form class="form" action="#ss">
                             <label for="name"></label>
-                            <input name="name" id="name" class="form_input"
+                            <input required name="name" id="name" class="form_input"
                                    type="text" placeholder="Ваше имя">
 
                             <label for="phone"></label>
-                            <input name="phone" maxlength="20" id="phone" class="form_input"
+                            <input required name="phone" maxlength="20" id="phone" class="form_input"
                                    placeholder="Ваш телефон" type="tel">
 
                             <label for="email"></label>
-                            <input name="email" maxlength="30" id="email" class="form_input"
+                            <input required name="email" maxlength="30" id="email" class="form_input"
                                    type="email"
                                    placeholder="Ваш E-mail">
 
@@ -326,7 +329,7 @@
                                 </div>
                                 <div class="comments-items_text">
                                     Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе
-                                    делал.</br>
+                                    делал.<br>
                                     Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую
                                     тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии,
                                     составили план тренировок на месяц вперёд.
@@ -370,7 +373,7 @@
 
         <footer class="footer">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9453.576566763813!2d23.823453175422234!3d53.675600495829215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dfd629d3b8fbb1%3A0x42eaa6097538ce1a!2z0JrQsNC70L7QttGB0LrQsNGPINGG0LDRgNC60LLQsCDQodCyLiDQkdCw0YDRi9GB0LAg0ZYg0JPQu9C10LHQsA!5e0!3m2!1sru!2sby!4v1669828272129!5m2!1sru!2sby"
-                    width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"
+                    allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="footer__info">
                 <address class="footer__addr">Каложская царква Св. Барыса і Глеба</address>
@@ -395,15 +398,15 @@
             <div class="modals__description">и мы перезвоним вам в течении 10 минут</div>
             <form class="form" action="#ss">
                 <label for="name"></label>
-                <input name="name" required maxlength="20" id="nameConsult" class="form_input" type="text"
+                <input required name="name" maxlength="20" id="nameConsult" class="form_input" type="text"
                        placeholder="Ваше имя">
 
                 <label for="phone"></label>
-                <input name="phone" required maxlength="20" id="phoneConsult" class="form_input"
+                <input required name="phone" maxlength="20" id="phoneConsult" class="form_input"
                        placeholder="Ваш телефон">
 
                 <label for="email"></label>
-                <input name="email" required maxlength="30" id="emailConsult" class="form_input"
+                <input required name="email" maxlength="30" id="emailConsult" class="form_input"
                        type="email"
                        placeholder="Ваш E-mail">
 
@@ -417,15 +420,15 @@
             <div class="modals__description">Пульсометр Polar FT1</div>
             <form class="form" action="#ss">
                 <label for="name"></label>
-                <input name="name" required maxlength="20" id="nameOrder" class="form_input" type="text"
+                <input required name="name" maxlength="20" id="nameOrder" class="form_input" type="text"
                        placeholder="Ваше имя">
 
                 <label for="phone"></label>
-                <input name="phone" required maxlength="20" id="phoneOrder" class="form_input"
+                <input required name="phone" maxlength="20" id="phoneOrder" class="form_input"
                        placeholder="Ваш телефон">
 
                 <label for="email"></label>
-                <input name="email" required maxlength="30" id="emailOrder" class="form_input"
+                <input required name="email" maxlength="30" id="emailOrder" class="form_input"
                        type="email"
                        placeholder="Ваш E-mail">
 
@@ -441,11 +444,15 @@
     </div>
     <!--Modals-->
 
+    <a class="pageUp" href="#up">
+        <img src="./assets/icons/up.svg" alt="up">
+    </a>
+
 </div>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
-<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>W
 <script src="js/slick.min.js"></script>
 <script src="js/slick.js"></script>
 <script src="js/main.js"></script>

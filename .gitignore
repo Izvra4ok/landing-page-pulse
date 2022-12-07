@@ -2,7 +2,7 @@
 /node_modules
 /.pnp
 .pnp.js
-
+/src/mailer/smart.php
 # testing
 /coverage
 
