@@ -1,3 +1,7 @@
+//libs//
+@import "src/scss/libs/bootstrap-grid";
+@import "src/scss/libs/slick";
+
 //block scss//
 @import "src/scss/animation";
 @import "src/scss/variables";
@@ -104,14 +108,4 @@ body {
   max-width: 950px;
 }
 
-.pageUp{
-  display: none;
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
-  width: 40px;
-  height: 40px;
-  img{
-    width: 100%;
-  }
-}
+
