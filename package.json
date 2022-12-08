@@ -1,5 +1,5 @@
 {
-  "name": "landing-page-uber",
+  "name": "landing-page-pulse",
   "version": "1.0.0",
   "description": "Course from udemy https://www.udemy.com/share/101Wy23@ErSFnvFTVOwSUFNS0tYLJGYekjWmyxgTfCZL5zqzJWaCqIOUDtBGpyZMv_p_wlqL9g==/",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Izvra4ok/landing-page-Uber.git"
+    "url": "git+https://github.com/Izvra4ok/landing-page-pulse.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Izvra4ok/landing-page-Uber/issues"
+    "url": "https://github.com/Izvra4ok/landing-page-pulse/issues"
   },
-  "homepage": "https://github.com/Izvra4ok/landing-page-Uber#readme",
+  "homepage": "https://github.com/Izvra4ok/landing-page-pulse#readme",
   "devDependencies": {
     "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
